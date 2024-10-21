@@ -1,0 +1,187 @@
+/* Step 1: basic css style rules */
+p {
+  /* color */
+  color: red;
+  /* text */
+  text-indent: 4ch;
+  /* font */
+
+  /* box */ 
+
+}
+
+h1 {
+  /* color */
+  color: darkblue;
+  /* text */
+
+  /* font */
+
+  /* box */ 
+
+}
+
+h2 {
+  /* color */
+  color: blue;
+  /* text */
+  text-decoration-line: underline;
+
+  /* font */
+
+  /* box */ 
+  padding: 10pt;
+}
+
+table {
+  /* border */
+  border-collapse: collapse;  /* this line means to keep single table line */
+  /* text */
+
+  /* font */
+  /* others */
+  width: 100%;
+}
+
+table, th, td {
+  /* border */
+  border-color: red;
+  border-style: solid;
+  /* box */ 
+}
+
+img {
+  /* others */
+  width: 100%;  
+}
+
+/* Step 2: menu bar */
+/* Navigation Bar: horizontal */
+nav ul {
+  list -style -type: none ;
+  overflow : hidden ;
+  /* color */
+  background-color: #333;
+  /* box */
+  /* margin: 0;
+  padding: 0; */
+}  
+
+nav ul li {
+  float : left ;
+}
+
+nav ul li a {
+  display : block ;
+  /* color */
+  color: white;
+  /* box */
+  padding: 14px 16px;
+  /* text */
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  /* color */
+  background-color: #111;
+}
+
+/* Dropdown Menu => 要記得加入新的HTML Elements */
+.dropdown-content {
+
+  /* color */
+  background-color: #f9f9f9;
+  /* box */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+
+  /* color */
+  color: black;
+  /* box */
+  padding: 12px 16px;
+  /* text */
+  text-decoration: none;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  color: red;
+}
+
+/* Aside Bar: vertical */
+aside ul {
+
+  /* box */
+  margin: 0;
+  padding: 0;
+  /* color */
+  background-color: #f1f1f1;  
+}
+
+aside ul li a {
+
+  /* color */
+  color: #000;
+  /* box */
+  padding: 8px 16px;
+  /* text */
+  text-decoration: none;
+}
+
+aside ul li a:hover {
+  /* color */
+  background-color: #555;
+  color: white;
+}
+
+
+/* Step 3: Form Style & Validation */
+form {
+  /* box */
+  padding: 5px;
+  border: 2px solid #FFC90E;
+  border-radius: 5px;
+}
+
+form input {
+  width: 95%;
+  /* box */
+  margin: 5px;
+}
+
+form button {
+  width: 95%;
+  /* box */
+  margin: 5px;
+  /* color */
+  background-color: green;
+  color: white;
+}
+
+form .necessary:after {
+  content:" *";
+  /* color */
+  color: red;
+}
+
+form input:valid {
+  /* color */
+  border-color: black;
+  /* box */
+  border-style: solid;
+}
+
+form input:invalid {
+  /* color */
+  border-color: red;
+  background-color: pink;
+  /* box */
+  border-style: dashed;
+}
